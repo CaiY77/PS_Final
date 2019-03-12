@@ -1,0 +1,619 @@
+@font-face {
+  font-family: BBold;
+  src: url(../fonts/Beaufort-Bold.ttf);
+}
+
+@font-face {
+  font-family: BReg;
+  src: url(../fonts/Beaufort-Regular.ttf);
+}
+
+/* #c4b998 */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: BReg;
+  /* border: solid 1px; */
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Landing START-----------------------------------------*/
+#landing {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/opening.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#opening2 {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: url(../images/opening2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  animation: dramaticEnter 1s ease-in-out;
+}
+
+.enter {
+  animation: dramaticEnter 4s ease-in-out;
+  color: #c9aa71;
+  font-family: BBold;
+  font-size: 50pt;
+  margin: 40vh 15vw 0 15vw;
+  padding: 20px 0 20px 0;
+  border-radius: 50px;
+  background: linear-gradient(170deg, rgba(43, 65, 98, 0.9) 0%, rgba(18, 16, 14, 0.9) 74%);
+}
+
+.enter:hover {
+  color: white;
+  border: outset #c9aa71 5px;
+}
+
+@keyframes dramaticEnter {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/*Landing END-----------------------------------------*/
+/*Navagation Bar START ------------------------------*/
+nav {
+  z-index: 1;
+  display: flex;
+  background: #121212;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}
+
+.content {
+  text-align: center;
+  flex: 1;
+  padding-top: 25px;
+}
+
+.content:hover {
+  border-bottom: solid #c9aa71 5px;
+}
+
+.content:hover .myPages {
+  color: white;
+}
+
+.myPages {
+  text-decoration: none;
+  font-family: BBold;
+  color: #c9aa71;
+}
+
+.logo {
+  padding: 10px;
+  height: 50px;
+  width: 50px;
+  flex: 1;
+}
+
+.navContainer {
+  flex: 28;
+  display: flex;
+}
+
+/*Navagation Bar END ------------------------------*/
+/*Home Page Start ---------------------------------*/
+body {
+  background: url(../images/back.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.icon {
+  margin-top: 120px;
+  margin-left: 32vw;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  transition: .5s ease-in-out;
+}
+
+.homePage {
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: 47vw 47vw;
+  grid-template-rows: 50vh 60vh 60vh 60vh;
+  grid-gap: 50px;
+  grid-template-areas:
+    "rise rise"
+    "darius darius"
+    "topContain topContain"
+    "botContain botContain"
+  ;
+}
+
+.rise {
+  background: linear-gradient(120deg, rgba(43, 65, 98, 0.9) 0%, rgba(18, 16, 14, 0.9) 74%);
+  grid-area: rise;
+  display: flex;
+  border: dashed #c4b998 1px;
+}
+
+.songTitle {
+  color: #c9aa71;
+  font-size: 20pt;
+  flex: 1;
+}
+
+.vidtext {
+  line-height: 1.5;
+  font-size: 12pt;
+  flex: 4;
+  color: #c4b998;
+}
+
+.youtube {
+  flex: 1;
+  margin: 30px 30px 30px 60px;
+}
+
+.vidinfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 30px 60px 30px 30px;
+}
+
+.darius {
+  grid-area: darius;
+  background-image: url(../images/Darius.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.darius:hover {
+  background-image: url(../images/darius/god-king.jpg);
+  background-size: cover;
+  transition: 1s ease-in-out;
+}
+
+.leesin {
+  background-image: url(../images/Lee_Sin.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.leesin:hover {
+  background-image: url(../images/leesin/GodFistSkin.jpg);
+  background-size: cover;
+  transition: 1s ease-in-out;
+}
+
+.orianna {
+  background-image: url(../images/Orianna.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.orianna:hover {
+  background-image: url(../images/orianna/DarkStarSkin.jpg);
+  background-size: cover;
+  transition: 1s ease-in-out;
+}
+
+.brand {
+  background-image: url(../images/Brand.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.brand:hover {
+  background-image: url(../images/brand/ZombieSkin.jpg);
+  background-size: cover;
+  transition: 1s ease-in-out;
+}
+
+.teemo {
+  background-image: url(../images/Teemo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.teemo:hover {
+  background-image: url(../images/teemo/OmegaSquadSkin.jpg);
+  background-size: cover;
+  transition: 1s ease-in-out;
+}
+
+.select {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  font-family: BBold;
+  color: #c9aa71;
+  font-size: 40pt;
+  text-align: center;
+  display: none;
+  background: linear-gradient(120deg, rgba(43, 65, 98, 0.4) 0%, rgba(10, 10, 10, 0.4) 74%);
+}
+
+.topContain {
+  display: flex;
+  grid-area: topContain;
+}
+
+.botContain {
+  display: flex;
+  grid-area: botContain;
+}
+
+#cham {
+  flex: 1;
+}
+
+#cham:hover {
+  flex: 20;
+  transition: 1s ease-in-out;
+}
+
+#cham:hover .select {
+  display: block;
+  animation: fade .5s ease-in-out;
+}
+
+.selStyle {
+  font-size: 30pt;
+}
+
+/*Home Page End ---------------------------------*/
+/*Top Page START---------------------------------*/
+.Pic {
+  width: 100%;
+  height: 100vh;
+  margin-top: 9vh;
+}
+
+#c {
+  font-family: BReg;
+  color: #c4b998;
+  font-size: 40pt;
+}
+
+
+.champContainer {
+  justify-content: center;
+  margin-bottom: 30px;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: 45vw 45vw;
+  grid-template-rows: 80vh 45vh 28vh 42vh 42vh 42vh 42vh 42vh 10vh;
+  grid-template-areas:
+    "skins skins"
+    "spotlight emblem"
+    "ability ability"
+    "passive passive"
+    "skill1 skill1"
+    "skill2 skill2"
+    "skill3 skill3"
+    "skill4 skill4"
+    "bio bio"
+  ;
+}
+
+.skins {
+  grid-area: skins;
+}
+
+#dar {
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  border: solid #c4b998 5px;
+  border-radius: 5px;
+}
+
+.spotlight {
+  grid-area: spotlight;
+}
+
+#emblemD {
+  background: url(../images/darius/noxus.jpg);
+  background-size: cover;
+}
+
+.emblem {
+  grid-area: emblem;
+  border: outset #c4b998 5px;
+  border-radius: 5px;
+}
+
+.bio {
+  text-align: center;
+  letter-spacing: 20px;
+  color: #c9aa71;
+  padding-top: 15px;
+  border: inset #c4b998 5px;
+  border-radius: 5px;
+  grid-area: bio;
+  background: linear-gradient(120deg, rgba(43, 65, 98, 0.8) 0%, rgba(10, 10, 10, 0.8) 74%);
+}
+
+.bio:hover {
+  animation: pulse 1s ease-in-out infinite;
+}
+
+.titleC {
+  padding: 20px;
+  margin: 50px;
+  color: #c9aa71;
+  border: outset #c4b998 5px;
+  border-radius: 5px;
+  font-family: Bbold;
+  text-align: center;
+  font-size: 40pt;
+  background: linear-gradient(120deg, rgba(43, 65, 98, 0.9) 0%, rgba(10, 10, 10, 0.9) 74%);
+}
+
+.crest {
+  margin: 30px;
+}
+.ability{
+  grid-area: ability;
+  padding: 20px;
+  margin: 50px;
+  color: #c9aa71;
+  border: outset #c4b998 5px;
+  border-radius: 5px;
+  font-family: Bbold;
+  text-align: center;
+  font-size: 40pt;
+  letter-spacing: 20px;
+  background: linear-gradient(120deg, rgba(43, 65, 98, 0.9) 0%, rgba(10, 10, 10, 0.9) 74%);
+}
+.passive{
+  grid-area: passive;
+}
+
+.skill1{
+  grid-area: skill1;
+}
+.skill2{
+  grid-area: skill2;
+}
+.skill3{
+  grid-area: skill3;
+}
+.skill4{
+  grid-area: skill4;
+}
+.skillstyle{
+  background: linear-gradient(120deg, rgba(43, 65, 98, 0.7) 0%, rgba(10, 10, 10, 0.7) 74%);
+  display:flex;
+  text-align: center;
+  border-radius: 20px;
+  
+}
+.skillPic{
+  flex:1;
+
+}
+.skillInfo{
+  flex:6;
+  color:#c9aa71;
+  text-align: left;
+  font-size: 12pt;
+  margin: 20px 100px 0px 0px;
+
+}
+.picStyle{
+  margin-top: 120px;
+height:100px;
+width:100px;
+}
+#bioModal {
+  display: none;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  animation: fade 1s ease-in-out;
+}
+
+.modalPicD {
+  background: url(../images/darius/noxus.jpg);
+  background-size: cover;
+}
+
+.modalTitle {
+  text-align: center;
+  letter-spacing: 20px;
+  color: #c4b998;
+  margin: 5vh 10vw 0 10vw;
+  padding: 20px;
+  border: solid #c9aa71 5px;
+  border-radius: 10px;
+  font-family: Bbold;
+  background: linear-gradient(120deg, rgba(43, 65, 98, 0.9) 0%, rgba(10, 10, 10, 0.9) 74%);
+}
+
+.modalText {
+  height: 40vh;
+  padding: 50px 80px 100px 80px;
+  text-align: left;
+  color: #c9aa71;
+  border: solid #c4b998 5px;
+  border-radius: 50px;
+  margin: 5vh 30vw 0 30vw;
+  overflow-y: auto;
+  background: linear-gradient(120deg, rgba(43, 65, 98, 0.9) 0%, rgba(10, 10, 10, 0.9) 74%);
+}
+
+#close {
+  font-family: Bbold;
+  font-size: 20pt;
+  padding: 10px;
+  background: linear-gradient(120deg, rgba(43, 65, 98, 0.9) 0%, rgba(10, 10, 10, 0.9) 74%);
+  border: solid #c9aa71 1px;
+  color: #c4b998;
+  margin-left: 50px;
+}
+
+#close:hover {
+  animation: pulse 1s ease-in-out infinite;
+  color: white;
+}
+
+/*Top Page END-----------------------------------*/
+/*Mid Page START--------------------------------------*/
+#ori {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: solid #c4b998 5px;
+  border-radius: 5px;
+}
+
+#emblemO, .modalPicO {
+  background: url(../images/orianna/piltover.jpg);
+  background-size: cover;
+}
+
+/*Mid Page END--------------------------------------*/
+/*Jungle Page START-------------------------------------*/
+#lee {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: solid #c4b998 5px;
+  border-radius: 5px;
+}
+
+#emblemL, .modalPicL {
+  background: url(../images/leesin/ionia.jpg);
+  background-size: cover;
+}
+
+/*Jungle Page END-------------------------------------*/
+/*Bottom Page START--------------------------------------*/
+#tee {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: solid #c4b998 5px;
+  border-radius: 5px;
+}
+
+#emblemT, .modalPicT {
+  background: url(../images/teemo/bandle.jpeg);
+  background-size: cover;
+}
+
+/*Bottom Page END--------------------------------------*/
+/*Support Page START---------------------------------------*/
+#bra {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: solid #c4b998 5px;
+  border-radius: 5px;
+}
+
+#emblemB, .modalPicB {
+  background: url(../images/brand/runeterra.png);
+  background-size: cover;
+}
+
+/*Support Page END---------------------------------------*/
+/*Footer ---------------------------------------------------------*/
+footer {
+  background: #121212;
+  color: #c4b998;
+  bottom: 0;
+  width: 100%;
+  height: 6vh;
+  position: fixed;
+  bottom: 0;
+}
+
+.foot {
+  display: flex;
+  text-align: right;
+  list-style: none;
+  margin: 15px 60px 15px 0;
+}
+
+li {
+  flex: 1;
+}
+
+span {
+  font-family: BBold;
+  font-size: 12pt;
+  color: white;
+}
+
+/*KeyFrames----------------------------------------*/
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeO {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

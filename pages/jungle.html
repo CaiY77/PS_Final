@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="icon" href="../images/LOL.png" type="image/gif">
+
+  <meta charset="utf-8">
+  <title>Jungle - Lee Sin</title>
+  <script src="../js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+
+  <nav>
+    <a href="../index.html"><img class="logo" src="../images/LOL.png" alt="logo"></a>
+    <div class="navContainer">
+      <a href="home.html" class="content myPages">HOME</a>
+      <a href="top.html" class="content myPages">TOP</a>
+      <a href="jungle.html" class="content myPages">JUNGLE</a>
+      <a href="mid.html" class="content myPages">MID</a>
+      <a href="bottom.html" class="content myPages">BOTTOM</a>
+      <a href="support.html" class="content myPages">SUPPORT</a>
+    </div>
+  </nav>
+
+  <img class="Pic" src="../images/Lee_Sin.jpg" alt="">
+  <h1 class="titleC">LEE SIN - <span id="c">The Blind Monk</span></h1>
+
+  <div id="bioModal" class="modalPicL">
+    <h1 class="modalTitle">BIOGRAPHY</h1>
+    <p class="modalText">
+      Among the many spirits Ionians revere, none are as storied as that of the dragon. While some believe it embodies ruin, others view it as a symbol of rebirth. Few can say for certain, and fewer still have ever been able to channel the dragon’s
+      spirit, and none so completely as Lee Sin.<br><br>He arrived at the Shojin monastery as a boy, claiming the dragon had chosen him to wield its power. The elder monks saw flashes of its fire in the talented child, but also sensed his reckless
+      pride, and the disaster it could bring. Warily,
+      they nonetheless took him as a pupil—though, as others advanced, the elders kept him cleaning dishes and scrubbing floors.<br><br>Lee Sin grew impatient. He longed to fulfill his destiny, not waste time on chores.<br><br>Sneaking into the
+      hidden archives, he found ancient texts describing how to call upon the spirit realm, and chose to flaunt his skill during a combat lesson. Brashly, he unleashed the dragon’s rage in a wild kick, paralyzing his learned
+      instructor. Consumed with shame and banished for his arrogance, the young man set out to atone.<br><br>Years passed. Lee Sin wandered far, to distant places, benevolently aiding those in need. Eventually he reached the Freljord, where he met
+      Udyr, a wildman who channeled the primal beasts of his homeland. The so-called Spirit Walker struggled
+      to control the powers that warred within him, and Lee Sin began to wonder if controlling the dragon was even possible. Sharing a need for spiritual guidance, the two men forged a bond, and he invited Udyr on his journey back home.<br><br>The
+      two were dismayed to hear that the empire of Noxus had invaded and occupied Ionia. Monks from every province had fallen back to defend the holy monastery at Hirana, high up in the mountains.<br><br>Lee Sin and Udyr found it besieged. Noxian
+      soldiers had broken through to Hirana’s great hall. As Udyr leapt to join the fray, Lee Sin hesitated, seeing his former peers and elders fall to the enemy’s blades. The wisdom of Hirana, Shojin, so
+      much of Ionia’s ancient culture—all would be lost.<br><br>With no other choice left, he invoked the dragon spirit.<br><br>A tempest of flames engulfed him, searing his skin and burning the sight from his eyes. Imbued with wild power, he
+      crippled the invaders with a flurry of breakneck punches and rapid kicks, the untamable spirit flaring brighter and hotter with
+      each blow.<br><br>The monks were victorious, but Lee Sin’s desperate actions left the monastery in ruins, and his vision would never return. At last, in the blind darkness, he understood that no mortal could ever bend the might of the dragon
+      spirit to their
+      will completely. Devastated, agonized, he bound a cloth over his sightless eyes and tried to stagger away down the mountain paths.<br><br>But the surviving elders stopped him. In forsaking all desire for power, their disgraced pupil was
+      finally ready to begin anew. Although they would not forget his previous arrogance, the monks offered absolution: the dragon’s wrath was deadly
+      and unpredictable, true enough, but the humblest and worthiest mortal souls could counter its fiery nature, and direct it from time to time.<br><br>Gratefully, Lee Sin stayed with the monks to rebuild their monastery, and after the work was
+      done and the Spirit Walker returned to the Freljord, Lee Sin devoted himself fully toward the pursuit of enlightenment.<br><br>In the years since the war with Noxus ended, he has continued to meditate on his role in Ionia. Knowing his homeland
+      has not faced the last of its trials, Lee Sin must master himself, and the dragon spirit within, to face whatever foe is yet
+      to come.
+    </p>
+    <button id="close">EXIT</button>
+
+  </div>
+
+
+  <main class="champContainer">
+
+    <div class="skins"><img src="../images/leesin/GodFistSkin.jpg" id="lee"></div>
+    <iframe class="spotlight" width="642" height="349" src="https://www.youtube.com/embed/e6SleHuJjLo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="emblem" id="emblemL">
+      <img class="crest" src="../images/leesin/crest.png" alt="">
+    </div>
+    <h3 class="ability">Abilities</h3>
+
+    <div class="passive skillstyle">
+      <div class="skillPic">
+        <img class="picStyle" src="../images/leesin/passive.png" alt=""></div>
+      <p class="skillInfo">
+        <span id="c">Flurry</span> <br><br>After Lee Sin uses an ability, his next 2 basic attacks gain Attack Speed and return Energy.
+      </p>
+    </div>
+
+    <div class="skill1 skillstyle">
+      <div class="skillPic">
+        <img class="picStyle" src="../images/leesin/ability1.png" alt=""></div>
+      <p class="skillInfo">
+        <span id="c">Sonic Wave / Resonating Strike</span><br><br>
+        Cost: 50 Energy<br>
+        Range: 1100<br><br>
+
+        Sonic Wave: Lee Sin projects a discordant wave of sound to locate his enemies, dealing physical damage to the first enemy it encounters. If Sonic Wave hits, Lee Sin can cast Resonating Strike for the next 3 seconds.
+        Resonating Strike: Lee Sin dashes to the enemy hit by Sonic Wave, dealing physical damage based on the target's missing Health.<br>
+
+        Sonic Wave: Lee Sin projects a discordant wave of sound to locate his enemies, dealing 50/75/100/125/150 (+100% bonus Attack Damage) physical damage to the first enemy it encounters, granting True Sight of the target. If Sonic Wave hits, Lee
+        Sin can cast Resonating Strike for the next 3 seconds.
+        Resonating Strike: Lee Sin dashes to the enemy hit by Sonic Wave, dealing 50/75/100/125/150 (+100% bonus Attack Damage) to 100/150/200/250/300 (+200% bonus Attack Damage) physical damage based on the target's missing Health.
+      </p>
+    </div>
+
+    <div class="skill2 skillstyle">
+      <div class="skillPic">
+        <img class="picStyle" src="../images/leesin/ability2.png" alt=""></div>
+      <p class="skillInfo">
+        <span id="c">Safeguard / Iron Will</span><br><br>
+        Cost: 50 Energy<br>
+        Range: 700<br><br>
+
+        Safeguard: Lee Sin rushes to target ally, shielding himself from damage. If the ally is a champion, they are also shielded. After using Safeguard, Lee Sin can cast Iron Will for the next 3 seconds.
+        Iron Will: Lee Sin's intense training allows him to thrive in battle. For 4 seconds, Lee Sin gains Life Steal and Spell Vamp.<br>
+
+        Safeguard: Lee Sin rushes to target ally. If the ally is a champion, Lee Sin shields the ally and himself for 55/110/165/220/275 (+80% Ability Power) damage for 2 seconds and Safeguard's cooldown is reduced by 50%. After using Safeguard, Lee
+        Sin can cast Iron Will for the next 3 seconds.
+        Iron Will: Lee Sin gains 10/15/20/25/30% Life Steal and Spell Vamp for 4 seconds.
+      </p>
+    </div>
+
+    <div class="skill3 skillstyle">
+      <div class="skillPic">
+        <img class="picStyle" src="../images/leesin/ability3.png" alt=""></div>
+      <p class="skillInfo">
+        <span id="c">Tempest / Cripple</span><br><br>
+        Cost: 50 Energy<br>
+        Range: 425<br><br>
+
+        Tempest: Lee Sin smashes the ground, sending out a shockwave that deals magic damage and reveals enemy units hit. If Tempest hits an enemy, Lee Sin can cast cripple for the next 3 seconds.
+        Cripple: Lee Sin cripples nearby enemies damaged by Tempest, reducing their Movement Speed for 4 seconds. Movement Speed recovers gradually over the duration.<br>
+
+        Tempest: Lee Sin smashes the ground, sending out a shockwave that deals 80/120/160/200/240 (+100% bonus Attack Damage) magic damage. If Tempest hits an enemy, Lee Sin can cast Cripple for the next 3 seconds.
+        Cripple: Lee Sin cripples nearby enemies struck by Tempest for 4 seconds, slowing their Movement Speed by 20/30/40/50/60%. Movement Speed recovers gradually over the duration.
+      </p>
+    </div>
+
+    <div class="skill4 skillstyle">
+      <div class="skillPic">
+        <img class="picStyle" src="../images/leesin/ulti.png" alt=""></div>
+      <p class="skillInfo">
+        <span id="c">Dragon's Rage</span><br><br>
+        Cost: -<br>
+        Range: 375<br><br>
+
+        Lee Sin performs a powerful roundhouse kick launching his target back, dealing physical damage to the target and any enemies they collide with. Enemies the target collides with are knocked into the air for a short duration. This technique
+        was taught to him by Jesse Perring, although Lee Sin does not kick players off the map.<br>
+
+        Lee Sin performs a powerful roundhouse kick knocking an enemy champion back and dealing {{ damage }} physical damage.Enemies the target collides with are knocked into the air briefly and take physical damage equal to {{ damage }} plus {{ percenthpcarrythrough }}%
+        of the initial target's bonus health.
+      </p>
+    </div>
+    
+    <h1 class="bio" id="bio">BIOGRAPHY</h1>
+
+  </main>
+
+  <footer>
+
+    <ul class="foot">
+      <li><span>Created By: </span> The Original Cai H.Yang</li>
+      <li><span>Caution: </span> Opinionated Content</li>
+      <li><span>Email: </span> CaiH.Yang@gmail.com</li>
+      <li><span>Phone: </span> 646.403.XXXX</li>
+    </ul>
+
+  </footer>
+
+
+
+
+  <script type="text/javascript" src="../js/main.js"></script>
+</body>
+
+</html>

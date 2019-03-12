@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="icon" href="../images/LOL.png" type="image/gif">
+
+  <meta charset="utf-8">
+  <title>Bottom - Teemo</title>
+  <script src="../js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+
+  <nav>
+    <a href="../index.html"><img class="logo" src="../images/LOL.png" alt="logo"></a>
+    <div class="navContainer">
+      <a href="home.html" class="content myPages">HOME</a>
+      <a href="top.html" class="content myPages">TOP</a>
+      <a href="jungle.html" class="content myPages">JUNGLE</a>
+      <a href="mid.html" class="content myPages">MID</a>
+      <a href="bottom.html" class="content myPages">BOTTOM</a>
+      <a href="support.html" class="content myPages">SUPPORT</a>
+    </div>
+  </nav>
+  <img class="Pic" src="../images/Teemo.jpg" alt="">
+  <h1 class="titleC">TEEMO -<span id="c"> The Swift Scout</span></h1>
+
+  <div id="bioModal" class="modalPicT">
+    <h1 class="modalTitle">BIOGRAPHY</h1>
+    <p class="modalText">
+      Teemo is a legend among his yordle brothers and sisters in Bandle City. As far as yordles are concerned, there is something just slightly off about him. While Teemo enjoys the companionship of other yordles, he also insists on frequent solo
+      missions in the ongoing defense of Bandle City. Despite his genuinely warm personality, something switches off inside Teemo's mind during combat so that the lives he must end while on patrol do not burden him. Even as a young recruit, the
+      drill instructors and other trainees found it a little disconcerting that, while Teemo was normally charming and kind, he turned deadly serious and highly efficient the minute combat exercises began. Teemo's superiors quickly steered him
+      toward the Scouts of the Mothership, which is one of Bandle City's most distinguished Special Forces unit alongside the Megling Commandos.<br><br>While most yordles do not handle solo scouting missions with a great deal of finesse, Teemo is
+      remarkably efficient at them. His record of success in defending Bandle City from infiltrators easily makes him one of the most dangerous yordles alive, though you'd never know it by having a cup of honey mead with him at his favorite inn. His
+      signature weapon - a blowgun - uses a rare ajunta poison he personally gathers from the jungles of Kumungu. To help cope with his lengthy periods of isolation, Teemo recently struck up a friendship with Tristana, a fellow member of Bandle
+      City's Special Forces. Teemo is a pint-sized foe that many have come to fear and whose small size belies his fearsome resolve.
+    </p>
+    <button id="close">EXIT</button>
+
+  </div>
+
+
+  <main class="champContainer">
+
+    <div class="skins"><img src="../images/teemo/OmegaSquadSkin.jpg" id="tee"></div>
+    <iframe class="spotlight" width="642" height="349" src="https://www.youtube.com/embed/Qj48qHM1MXE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="emblem" id="emblemT">
+      <img class="crest" src="../images/teemo/crest.png" alt="">
+    </div>
+    <h3 class="ability">Abilities</h3>
+
+    <div class="passive skillstyle">
+      <div class="skillPic">
+        <img class="picStyle" src="../images/teemo/passive.png" alt=""></div>
+      <p class="skillInfo">
+        <span id="c">Guerrilla Warfare</span> <br><br>If Teemo stands still and takes no actions for a short duration, he becomes Invisible indefinitely. If he's in brush, Teemo can enter and maintain his Invisibility while moving. After leaving
+        Invisibility, Teemo gains the Element of Surprise, increasing his Attack Speed for 3 seconds.
+      </p>
+    </div>
+
+    <div class="skill1 skillstyle">
+      <div class="skillPic">
+        <img class="picStyle" src="../images/teemo/ability1.png" alt=""></div>
+      <p class="skillInfo">
+        <span id="c">Blinding Dart</span><br><br>
+        Cost: 70/75/80/85/90 Mana<br>
+        Range: 680<br><br>
+
+        Obscures an enemy's vision with a powerful venom, dealing damage to the target unit and blinding it for the duration.<br>
+
+        Deals 80/125/170/215/260 (+80% Ability Power) magic damage and blinds the target for 1.5/1.75/2/2.25/2.5 seconds.
+      </p>
+    </div>
+
+    <div class="skill2 skillstyle">
+      <div class="skillPic">
+        <img class="picStyle" src="../images/teemo/ability2.png" alt=""></div>
+      <p class="skillInfo">
+        <span id="c">Move Quick</span><br><br>
+        Cost: 40 Mana<br>
+        Range: 20<br><br>
+
+        Teemo scampers around, passively increasing his Movement Speed until he is struck by an enemy champion or turret. Teemo can sprint to gain bonus Movement Speed that isn't stopped by being struck for a short time.<br>
+
+        Passive: Teemo's Movement Speed is increased by 10/14/18/22/26% unless he has been damaged by an enemy champion or turret in the last 5 seconds.<br><br>
+        Active: Teemo sprints, gaining twice his normal bonus for 3 seconds. This bonus is not lost when struck.
+        Sin can cast Iron Will for the next 3 seconds.
+        Iron Will: Lee Sin gains 10/15/20/25/30% Life Steal and Spell Vamp for 4 seconds.
+      </p>
+    </div>
+
+    <div class="skill3 skillstyle">
+      <div class="skillPic">
+        <img class="picStyle" src="../images/teemo/ability3.png" alt=""></div>
+      <p class="skillInfo">
+        <span id="c">Toxic Shot</span><br><br>
+        Cost: 0 Mana<br>
+        Range: 680<br><br>
+
+        Each of Teemo's attacks will poison the target, dealing damage on impact and each second after for 4 seconds.<br>
+
+        Teemo's basic attacks poison their target, dealing 10/20/30/40/50 (+30% Ability Power) magical damage upon impact and 6/12/18/24/30 (+10% Ability Power) magical damage each second for 4 seconds.
+      </p>
+    </div>
+
+    <div class="skill4 skillstyle">
+      <div class="skillPic">
+        <img class="picStyle" src="../images/teemo/ulti.png" alt=""></div>
+      <p class="skillInfo">
+        <span id="c">Noxious Trap</span><br><br>
+        Cost: 75 Mana<br>
+        Range: 400/650/900<br><br>
+
+        Teemo throws an explosive poisonous trap using one of the mushrooms stored in his pack. If an enemy steps on the trap, it will release a poisonous cloud, slowing enemies and damaging them over time. If Teemo throws a mushroom onto another
+        mushroom it will bounce, gaining additional range.<br>
+
+        Tosses a stored mushroom as a trap that detonates if an enemy steps on it, spreading poison to nearby enemies that slows Movement Speed by 30/40/50%, reveals them and deals 200/325/450 (+50% Ability Power) magic damage over 4 seconds. Traps
+        last 5 minutes and take 1 second to arm and stealth. If a thrown trap lands on another trap, it will bounce up to 3/4/5 Teemos further before planting.Teemo forages for a mushroom every 0 seconds, but he is only big enough to carry 3 at
+        once.
+      </p>
+    </div>
+    <h1 class="bio" id="bio">BIOGRAPHY</h1>
+
+  </main>
+  <footer>
+
+    <ul class="foot">
+      <li><span>Created By: </span> The Original Cai H.Yang</li>
+      <li><span>Caution: </span> Opinionated Content</li>
+      <li><span>Email: </span> CaiH.Yang@gmail.com</li>
+      <li><span>Phone: </span> 646.403.XXXX</li>
+    </ul>
+
+  </footer>
+
+
+  <script type="text/javascript" src="../js/main.js"></script>
+</body>
+
+</html>

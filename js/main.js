@@ -5,6 +5,7 @@ class Node {
   }
 } // Node Class
 // testing
+
 class LinkedList {
 
   constructor() {
@@ -69,10 +70,12 @@ window.addEventListener('load', () => {
   setTimeout(() => {
     cover.style.display = 'block';
     sound.pause();
+    sound.currentTime = 0;
   }, 8500);
   // set a 8.5s delay that covers gif with picture, ES6 way.
 
 }); // addEventListener that triggers on load, ES6 way.
+
 /*Landing Page Above--------------------------------------------------------*/
 /*Top page START-------------------------*/
 $(document).ready(function() {

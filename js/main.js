@@ -70,7 +70,6 @@ window.addEventListener('load', () => {
   setTimeout(() => {
     cover.style.display = 'block';
     sound.pause();
-    sound.currentTime = 0;
   }, 8500);
   // set a 8.5s delay that covers gif with picture, ES6 way.
 
